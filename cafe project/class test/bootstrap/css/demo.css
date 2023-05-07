@@ -1,0 +1,19 @@
+/*
+Date: 22/Nov/2022
+Program: External CSS Demo
+Author: Adetola Michael
+*/
+
+/* Custom fonts definition*/
+@font-face{font-family: 'michael-rubik';
+src: url('../fonts/rubik/rubik-bold-webfont.woff2')}
+
+@font-face{font-family: 'moat biorhyme'
+src: url('../fonts/biorhyme/biorhyme-extrabold-webfont.woff2')}
+
+body{background-color:black;
+color: rgb(255, 255, 255)}
+
+p{font-family:'michael-rubik', Karla,calibri, sans-serif;}
+
+a{color: rgb(255, 242, 0); font-family: 'moat biorhyme', serif; }

@@ -1,0 +1,26 @@
+{% extends "user/home_layout.html"%}
+{% block content%}
+<div style="background-color: white;">
+   <form class="px-3 py-3" method="post" action="{{url_for('donate')}}">
+    <input type="hidden" name="csrf_token" id="csrf_token" value="{{ csrf_token()}}">
+    <p><i><b>Post</b></i></p>
+    <div class="row mb-3 form-gourp">
+        <label class="col-md-2">Full Name:</label>
+        <div class="col-md-6">
+            <input type="text" name="fullname" value="{% if deets %}{{deets.user_fullname}}{% endif %}" class="form-control border-success">
+        </div>
+        <div class="mb-3 form-group row mt-2">
+            <label class="col-md-2">Donation Amount</label>
+            <div class="col-md-6">
+                <input type="text" name="amount" class="form-control border-success">
+            </div>
+        </div>
+        <div class="form-group mb-3 row">
+            <div class="col-md-10">
+                <button class="btn btn-lg btn-warning col-10">Donate!</button>
+            </div>
+        </div>
+    </div>
+   </form>
+</div>   
+{% endblock%}

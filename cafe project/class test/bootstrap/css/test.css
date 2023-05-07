@@ -1,0 +1,25 @@
+/* border properties demo */
+
+
+.divA{border:20px solid rgb(87,87,87);
+	  width:200px;
+	  height:200px;
+	  margin-top:10px;
+	  border-radius:50%;
+	  background-color:red}
+	  
+.divB{border:20px solid rgb(87,87,87);
+	  width:200px;
+	  height:200px;
+	  margin-top:10px;
+	  border-radius:50%;
+	  background-color:yellow;}	  
+
+
+	  
+.divC{border:20px solid rgb(87,87,87);
+	  width:200px;
+	  height:200px;
+	  margin-top:10px;
+	  border-radius:50%;
+	  background-color:green}

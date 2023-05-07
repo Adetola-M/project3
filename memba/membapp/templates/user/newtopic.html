@@ -1,0 +1,18 @@
+{% extends "user/home_layout.html"%}
+{% block content%}
+<div style="background-color: white;">
+   <form class="px-3 py-3" method="post" action="{{url_for('newtopic')}}">
+    <input type="hidden" name="csrf_token" id="csrf_token" value="{{ csrf_token()}}">
+    <p><i><b>Post</b></i></p>
+    <div class="row mb-3">
+        <label for="content" class="col-md-2 col-form-label"></label>
+        <div class="col-md-10">
+            <textarea maxlength="content" class="form-control" placeholder="Leave a comment here" style="min-height:100px;border:1px solid red" name="content"></textarea>
+            <label for="floatingTextarea"></label>
+        </div>
+        <button type="submit" class="btn btn-success col-md-3 m-auto">Post</button>
+
+    </div>
+   </form>
+</div>   
+{% endblock%}

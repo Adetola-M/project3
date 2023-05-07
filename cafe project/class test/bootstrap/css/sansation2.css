@@ -1,0 +1,11 @@
+/*
+Date: 22/Nov/2022
+Program:Quiz
+Author: Adetola Michael
+*/
+
+/* Custom fonts definition*/
+@font-face{font-family: 'sensation';
+src: url('../fonts/karla/karla-ligth-webfont.woff2')}
+sss
+body{font-family: 'sensation' /calibri, sans-serif;}

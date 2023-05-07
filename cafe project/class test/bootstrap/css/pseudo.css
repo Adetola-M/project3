@@ -1,0 +1,60 @@
+body{background-color:yellow;font-family:tahoma, corbel, sans-serif;}
+
+/*div,nav{min-height:100px;border:1px solid red}*/
+		
+		nav{background-color:green}
+		
+		.services,.content{display:flex;min-height:200px;min-width:200px}
+		
+		#banner{height:500px; background-image: url('../images/banner.jpg');
+				background-size:cover;background-attachmant:fixed}
+		
+		.box{width:30%;height:200px;background-color:#f05d23;box-shadow:6px 6px 4px grey;
+			color:white;text-align:center}
+		
+		.box p{height:150px;line-height:150px}
+		
+		#img{width:30%;}
+		
+		#about{width:70%;padding:10px}
+		
+		.footer{background-color:#447604;
+			color:white;}
+			
+		.footer p{height:100px;line-height:100px}
+
+		#about h2{width:40%;text-shadow:2px 1px 1px red; /*h v b color*/
+				box-shadow:8px 6px 5px blue,10px 10px 5px yellow;}
+				
+		#img{width:40%;align:center}
+				
+		#img img:hover{border:8px solid red}
+			
+		#img img{border-radius:50%;
+				height:400px;weight:250px
+				;padding:10px;margin:5px}
+
+		.services{margin:20px;justify-content:space-between}
+		
+		p::first-letter{font-size:30px;text-decoration:underline;color:yellow}
+
+		h2::before{content:"***"}
+		h2::after{content:"***"}
+		
+		a{background-color:#261c15;color:white;padding:10px;
+		border-radius:25% 30%;text-decoration:none}
+		
+		a:hover{color:#261c15;background-color:white;text-decoration:underline;border:1px solid black}
+		
+		table tr:hover{background-color:yellow}
+		
+		table tr:nth-child(odd){background-color:red;color:white}
+		
+		table{border-collapse:collapse}
+		
+		.footer{letter-spacing:4px;margin-top20px}
+		
+		#content{margin-top:20px}
+		
+		h1,h1{text-decoration:uppercase;font-family:calibri,arial, sans-serif;}
+		

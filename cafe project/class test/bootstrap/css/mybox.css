@@ -1,0 +1,25 @@
+/* border properties demo */
+
+body{background-color: rgb(200,10,0);
+     color: rgb(255,255,255)}
+	 
+.heading1{border-width:10px;
+		  border-style:solid;
+		  border-color:#fff;
+		  border-top-style:dotted;
+		  border-bottom-style:double;
+		  border-left-color:skyblue;
+		  border-left-width:50px}
+		  
+.para1{border:10px solid #fff}
+
+.divA{border:2px solid #fff;
+	  width:300px;
+	  height:300px;
+	  border-radius:20px;}
+	  
+.divB{border:2px solid rgb(255,242,0);
+	  width:300px;
+	  height:300px;
+	  margin-top:10px;
+	  border-radius:50%}

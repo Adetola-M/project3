@@ -1,0 +1,54 @@
+{% extends "user/home_layout.html"%}
+{% block content%}
+    <div class="content" style="background-color: white;padding:3em">
+    
+        <div class="row">
+            <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                Contact us
+            </h3>
+              {% set done= get_flashed_messages() %}
+              {% if done %}
+                {% for d in done%}
+                <span class="alert alert-success">{{ d }}</span>
+                {% endfor %}
+              {% endif%}
+            <form method="post" action="" novalidate enctype="multipart/form-data">
+                {{ contact.csrf_token }}
+                {{contact.confirm_email}}{{contact.confirm_email.errors}}
+                {{contact.screenshot}}{{contact.screenshot.errors}}
+                {# {{contact.hidden_tag() }} #}
+                <div class="mb-3 form-group row">
+                    {{contact.email.label(class_='col-md-2')}}
+                    <div class="col-md-6"></div>
+                        {% if contact.email.errors %}
+                        {% for email_errors in contact.email.errors %}
+                        <div class="alert alert-danger color-danger">{{email_errors}}</span>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="col-md-6">
+                        {{contact.email(class_='form-control border-success',placeholder_='Enter Email')}}
+                    </div>
+                    <div class="col-md">
+                        {% if contact.email.errors %}
+                        {% for message_errors in contact.email.errors %}
+                        <div class="alert alert-danger color-danger">{{message_errors}}</span>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    {{contact.message.label}}
+                    <div class="col-md-6">
+                        {{contact.message(class_='border-success')}}
+                    </div>
+                    <div>
+                    {{contact.submit(class_='btn btn-success col-4 m')}}
+                    </div>
+                </div>
+            </form>
+            
+            </div>
+        </div>
+
+    </div>
+{% endblock%}

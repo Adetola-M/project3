@@ -1,0 +1,15 @@
+/* traffic light demo css */
+
+
+.div{border:4px solid #808080;
+	  width:150px;
+	  height:150px;
+	  margin:20px;
+	  border-radius:50%;
+	  }
+	  
+#red{background-color: rgb(255,0,0)}
+	  
+#yellow{background-color: #fff123}
+
+#green{background-color: #00ff00}
